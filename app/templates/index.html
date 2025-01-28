@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insight Platter</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.3/socket.io.js"></script>
+    <script src="/static/js/scripts.js" defer></script>
+</head>
+
+<body>
+    <div id="progress-container" class="hidden">
+        <!-- Main progress bar -->
+        <p id="progressMessage">Starting analyzing...</p>
+        <div id="mainProgressBar" class="progress-bar">
+            <div id="mainProgressBarFill" class="progress-fill"></div>
+            <span id="progressPercent">0%</span>
+        </div>
+
+        <!-- Sub progress bar -->
+        <p id="subProgressMessage" class="hidden">Sub task starting...</p>
+        <div id="subProgressBar" class="sub-progress-bar hidden">
+            <div id="subProgressBarFill" class="progress-fill"></div>
+            <span id="subProgressPercent">0%</span>
+        </div>
+    </div>
+
+    <div class="content-wrapper">
+        <header>
+            <div class="container">
+                <h1>Insight Platter</h1>
+                <p>Analyze restaurant reviews and gain valuable insights about customer satisfaction!</p>
+            </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <section class="form-section">
+                    <h2>Enter Restaurant Name or URL</h2>
+                    <form action="/analyze" method="post" id="analysis-form">
+                        <input type="text" name="restaurant" placeholder="Enter Restaurant Name or URL" required>
+                        <button type="submit" class="btn">Analyze</button>
+                    </form>
+                    <div id="loading-spinner" class="spinner" style="display: none;"></div>
+                </section>
+
+                <section class="insights">
+                    <h3>How It Works</h3>
+                    <p>Insight Platter is designed to analyze restaurant reviews exclusively from OpenTable. By leveraging advanced web scraping and sentiment analysis, our system gathers customer feedback, processes it, and assigns sentiment scores (positive, neutral, or negative). This helps restaurant owners and managers uncover actionable insights about customer satisfaction, pinpoint strengths, and address potential service gaps—all to enhance the dining experience.</p>
+                </section>          
+
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Insight Platter. All rights reserved.</p>
+            <p>Licensed under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>.</p>
+        </footer>
+
+    </div>
+</body>
+
+
+</html>

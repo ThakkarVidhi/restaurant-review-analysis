@@ -136,6 +136,23 @@ ENV/
 env.bak/
 venv.bak/
 
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# IDE-specific files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Config files
+config.py
+config.json
+
+# ChromeDriver
+chromedriver*
+
 # Spyder project settings
 .spyderproject
 .spyproject

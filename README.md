@@ -1,6 +1,6 @@
 # <h1 align="center">Insight Platter: Restaurant Sentiment Analysis</h1>
 
-**Analyze restaurant reviews from OpenTable to provide sentiment scores and valuable insights into customer opinions.**
+**A full-stack sentiment analysis platform that scrapes restaurant reviews from OpenTable, analyzes them using machine learning, and visualizes customer opinions to generate actionable insights for businesses**
 
 ![Build Status](https://img.shields.io/badge/build-passing-brightgreen) ![License](https://img.shields.io/badge/license-MIT-blue)
 
@@ -8,7 +8,7 @@
 
 ## Project Description
 
-**Insight Platter** is a tool designed to analyze customer reviews from **OpenTable**. It performs sentiment analysis to evaluate customer opinions and feedback. By understanding customer sentiments, businesses can enhance their services and elevate customer satisfaction. This project offers actionable insights into customer behavior, enabling restaurants to make data-driven decisions.
+**Insight Platter** s a full-stack application that automates the process of collecting and analyzing restaurant reviews from **OpenTable**. It uses a machine learning-based sentiment analysis pipeline to classify customer feedback and display insights through interactive visualizations. The platform empowers restaurants to make data-driven decisions that improve service quality and customer satisfaction.
 
 ---
 
@@ -53,9 +53,9 @@
 - Pandas, NumPy (for data manipulation)
 
 **Machine Learning:**:
-- Custom-built model for sentiment analysis, dynamically selecting algorithms based on dataset characteristics.
-    - Uses Logistic Regression, Decision Trees, Random Forest, or Gradient Boosting depending on dataset size and class distribution.
-    - Incorporates SMOTE for handling class imbalances.
+- A dynamic sentiment analysis pipeline selects the optimal model based on dataset characteristics:
+    - **Logistic Regression, Decision Tree, Random Forest**, or **Gradient Boosting** are chosen depending on data volume and class balance.
+    - **SMOTE** (Synthetic Minority Over-sampling Technique) is applied to handle class imbalances before training.
 
 **Other Tools**:
 - Plotly (for visualizations)
@@ -71,11 +71,11 @@ Below are snapshots of the application showcasing its functionality:
 
 ![Home Page](./app//static/images/home-ui.png)
 ![Progress Bar](./app//static/images/progress-bar-ui.png)
-![Home Page](./app//static/images/ploarity-score-distribution-plot.png)
-![Home Page](./app//static/images/review-length-sentiment-correlation-plot.png)
-![Home Page](./app//static/images/word-cloud-positive-plot.png)
-![Home Page](./app//static/images/top-negative-keyword-plot.png)
-![Home Page](./app//static/images/sentiment-vs-food-rating-plot.png)
+![Sentiment Score Distribution](./app//static/images/ploarity-score-distribution-plot.png)
+![Review Length vs Sentiment](./app//static/images/review-length-sentiment-correlation-plot.png)
+![Positive Word Cloud](./app//static/images/word-cloud-positive-plot.png)
+![Top Negative Keywords](./app//static/images/top-negative-keyword-plot.png)
+![Sentiment vs Food Rating](./app//static/images/sentiment-vs-food-rating-plot.png)
 ![Sentiment Dashboard](./app//static/images/map.png)
 
 Explore the platform to dive deeper into more detailed charts and comprehensive insights!
